@@ -9,7 +9,7 @@
 .page-header{
     width: 100%;
     height: 82px;
-    border-bottom: 2px solid #2E2F55;
+    border-bottom: 1px solid #2E2F55;
     background: #FFFFFF;
     position: -webkit-sticky;
     position:sticky;
@@ -73,18 +73,18 @@
     position: relative;
 }
 /* 介绍部分样式 */
-.intro-section{
+.banner-section{
     height: 420px;
     margin-top: 63px;
     font-size: 0;
 }
-.intro-section-left{
+.banner-left{
     margin-left: 26px;
     margin-right: 89px;
     display: inline-block;
     vertical-align: top;
 }
-.intro-section-title{
+.banner-title{
     font-size: 46px;
     font-family: PingFangSC-Semibold, PingFang SC;
     font-weight: 600;
@@ -92,7 +92,7 @@
     line-height: 40px;
     margin-top: 80px;
 }
-.intro-section-desc{
+.banner-desc{
     font-size: 22px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
@@ -101,7 +101,7 @@
     margin-top: 27px;
     margin-left: 3px;
 }
-.intro-section-content{
+.banner-content{
     width: 502px;
     height: 136px;
     font-size: 20px;
@@ -111,10 +111,10 @@
     line-height: 34px;
     margin-top: 27px;
 }
-.intro-section-right{
+.banner-right{
     display: inline-block;
 }
-.intro-section-img{
+.banner-img{
     width: 510px;
     height: 420px;
 }
@@ -123,14 +123,15 @@
     height: 644px;
     text-align: center;
     background: linear-gradient(180deg, #F3F8FF 0%, #FFFFFF 100%);
+    margin-top: 87px;
 }
-.direction-section-title{
+.direction-title{
     margin-top: 64px;
 }
-.direction-section-desc{
+.direction-desc{
     margin-top: 19px;
 }
-.direction-section-menu{
+.direction-menu{
     margin-top: 66px;
     display: flex;
     justify-content: space-around;
@@ -211,16 +212,16 @@
     text-align: center;
     margin-top: 58px;
 }
-.path-section-desc{
+.path-desc{
     margin-top: 24px;
 }
-.path-section-list{
+.path-list{
     margin-top: 74px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.path-section-item{
+.path-item{
     width: 265px;
     height: 325px;
     background: #FFFFFF;
@@ -230,10 +231,10 @@
     cursor: pointer;
     opacity: 0.8;
 }
-.path-section-item:nth-child(n+5){
+.path-item:nth-child(n+5){
     margin-top: 47px;
 }
-.path-section-item:hover{
+.path-item:hover{
     opacity: 1;
     box-shadow: 0px 0px 26px 0px rgba(46, 47, 85, 0.8);
     transition: all .5s ease;
@@ -290,15 +291,15 @@
     margin-top: 120px;
     margin-bottom: 102px;
 }
-.topic-section-desc{
+.topic-desc{
     margin-top: 24px;
 }
-.topic-section-list{
+.topic-list{
     margin-top: 61px;
     display: flex;
     justify-content: space-between;
 }
-.topic-section-item{
+.topic-item{
     width: 265px;
     height: 300px;
     background: #FFFFFF;
@@ -307,7 +308,7 @@
     opacity: 0.8;
     font-size: 0;
 }
-.topic-section-item:hover{
+.topic-item:hover{
     opacity: 1;
     box-shadow: 0px 2px 13px 0px rgba(46, 47, 85, 0.8);
     transition: all .5s ease;
@@ -315,13 +316,6 @@
 .topic-item-img{
     width: 265px;
     height: 144px;
-}
-.topic-item-container{
-    padding: 0 25px;
-    margin-top: 17px;
-}
-.topic-section-item:nth-child(3) .topic-item-container{
-    padding: 0px 24px 0px 19px;
 }
 .topic-item-title{
     font-size: 18px;
@@ -337,6 +331,11 @@
     font-weight: 400;
     color: #2E2F55;
     line-height: 22px;
+    padding: 0 25px;
+    margin-top: 17px;
+}
+.topic-item:nth-child(3) .topic-item-content{
+    padding: 0px 24px 0px 19px;
 }
 /* 联系部分样式 */
 .connect-section{
@@ -350,14 +349,14 @@
     padding: 47px 0px 51px 0px;
     margin-top: 20px;
 }
-.connect-section-title{
+.connect-title{
     font-size: 32px;
     font-family: PingFangSC-Medium, PingFang SC;
     font-weight: 500;
     color: #FFFFFF;
     line-height: 45px;
 }
-.connect-section-desc{
+.connect-desc{
     font-size: 16px;
     font-family: PingFangSC-Regular, PingFang SC;
     font-weight: 400;
@@ -365,7 +364,7 @@
     line-height: 22px;
     margin-top: 7px;
 }
-.connect-section-button{
+.connect-button{
     width: 183px;
     height: 54px;
     font-size: 24px;
@@ -378,7 +377,7 @@
     margin-top: 24px;
     cursor: pointer;
 }
-.connect-section-button:hover{
+.connect-button:hover{
     opacity: .8;
     transition: all .5s ease;
 }
@@ -387,15 +386,15 @@
     margin-top: 80px;
     margin-bottom: 78px;
 }
-.case-section-title{
+.case-title{
     text-align: center;
 }
-.case-section-list{
+.case-list{
     margin-top: 71px;
     display: flex;
     justify-content: space-between;
 }
-.case-section-item{
+.case-item{
     width: 580px;
     height: 300px;
     background: #FFFFFF;
@@ -405,22 +404,15 @@
     width: 580px;
     height: 32px;
 }
-.case-item-logo-sentu{
+.case-item-logo.sentu{
     width: 187px;
     height: 68px;
     margin: 17px 0px 0px 40px;
 }
-.case-item-logo-unionpay{
+.case-item-logo.unionpay{
     width: 262px;
     height: 68px;
     margin: 12px 0px 0px 41px;
-}
-.case-item-container{
-    padding: 0px 40px;
-    margin-top: 31px;
-}
-.case-section-item:last-child .case-item-container{
-    margin-top: 36px;
 }
 .case-item-content{
     font-size: 20px;
@@ -428,6 +420,11 @@
     font-weight: 400;
     color: #2E2F55;
     line-height: 35px;
+    padding: 0px 40px;
+    margin-top: 31px;
+}
+.case-item:last-child .case-item-content{
+    margin-top: 36px;
 }
 /* 页面脚部样式 */
 .page-footer{
