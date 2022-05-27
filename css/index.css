@@ -278,6 +278,7 @@
     background-size: cover;
     background-position: bottom;
     padding: 47px 0px 51px 0px;
+    margin-top: 20px;
 }
 .connect-section-title{
     font-size: 32px;
@@ -305,6 +306,7 @@
     border-radius: 10px;
     border: none;
     margin-top: 24px;
+    cursor: pointer;
 }
 .connect-section-button:hover{
     opacity: .8;
