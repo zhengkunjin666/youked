@@ -114,6 +114,12 @@ table {
     margin: 0;
     box-sizing: border-box;
 }
+.page-basic-layout{
+  min-height: 100vh;
+  min-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
 .container-1200{
     width: 1200px;
     margin: 0 auto;
